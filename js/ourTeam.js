@@ -38,3 +38,6 @@ const teamMembers = [
     img: "img/female3.png",
   },
 ];
+
+//  acquizio oggetti dalla lista array
+const container = document.getElementById("teamContainer");
