@@ -5,3 +5,64 @@ body {
   padding: 0;
   text-align: center;
 }
+
+.teamSection {
+  padding: 40px;
+}
+
+.teamSection h1 {
+  color: #f54291;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.teamSection p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.teamContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.teamCard {
+  display: flex;
+  background: #000;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.teamCard img {
+  width: 50%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.teamInfo {
+  text-align: left;
+  padding: 15px;
+  flex: 1;
+}
+
+.teamInfo h3 {
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.teamInfo p {
+  margin: 0 0 10px;
+}
+
+.teamInfo a {
+  color: #00c6ff;
+  text-decoration: none;
+}
