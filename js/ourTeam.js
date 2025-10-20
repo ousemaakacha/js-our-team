@@ -41,3 +41,8 @@ const teamMembers = [
 
 //  acquizio oggetti dalla lista array
 const container = document.getElementById("teamContainer");
+
+// scorro array e recupro singolo membro
+for (let i = 0; i < teamMembers.length; i++) {
+  const member = team[i];
+}
