@@ -45,4 +45,17 @@ const container = document.getElementById("teamContainer");
 // scorro array e recupro singolo membro
 for (let i = 0; i < teamMembers.length; i++) {
   const member = team[i];
+
+  //   creo un contenitore card dove inserisco il contenuto html
+  const card = document.createElement("div");
+  card.classList.add("teamCard");
+
+  card.innerHTML = `
+  <img src='${member.img}' alt='${member.name}'>
+  <div class='teamInfo'>
+   <h3>${member.name.toUpperCase()}</h3>
+   <p>${member.role}</p>
+   <a href="mailto:${member.email}">${member.email}</a>
+  </div>
+  `;
 }
